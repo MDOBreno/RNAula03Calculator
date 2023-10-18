@@ -5,3 +5,10 @@ Criado com o comando:
 
 $ npx react-native@0.63 init RNAula03Calculator --version 0.63
 
+Em seguida fazer esses ajustes para poder rodar no iOS:
+
+- Ajuste 1de3 para poder executar em iOS nos dias de hoje: definicao de versao mais recente ainda compativel do use_flipper
+- Ajuste 2de3 para poder executar em iOS nos dias de hoje: Deletar podfile.lock e pasta Pods, em seguida executar pod install
+- Ajuste 3de3 para poder executar em iOS nos dias de hoje: definicao de versao minima de iOS para 13 no podfile o no xcproject
+- E abrir no Xcode para nogar com conta apple
+
