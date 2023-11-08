@@ -30,6 +30,7 @@ export default class App extends Component {
   state = { ...initialState }
 
   addDigit = n => {
+    console.debug(typeof this.state.displayValue);
     if (n=='.' && this.state.displayValue.includes('.')) {
       return;
     }
@@ -73,7 +74,7 @@ export default class App extends Component {
       }
       values[1] = 0;
       this.setState({
-          displayValue: values[0],
+          displayValue: `${values[0]}`,
           operation: equals ? null : operation,
           current: equals ? 0 : 1,
           // clearDisplay: !equals,
